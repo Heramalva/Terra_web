@@ -10,22 +10,23 @@ a{
   text-shadow: 3px 3px black;
 }
 #cabecera{
-  border:1px solid black;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-display:flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
   text-align: center;
   background-color: orange;
   padding: 1px;
+  text-align: center;
 }
 .empresa{
-  border:1px solid black;
-  width:100%;
-  padding:0% 100% 0% 100%;
-  box-sizing: border-box;
+  width:80%;
+  box-sizing: content-box;
 }
 #logo{
   padding-top:20px;
-  width:27.2%;
+  width:20%;
+  text-align: center;
 }
 .cuerpo{
   text-align: center;
