@@ -1,0 +1,35 @@
+body{
+  font-family: sansita;
+  background-color: black;
+  width:90%;
+  margin:0 auto;
+}
+a{
+  text-decoration: none;
+  color:white;
+  text-shadow: 2px 2px black;
+}
+#cabecera{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  background-color: orange;
+  padding: 1px;
+}
+.empresa{
+  width:100%;
+  padding:0px 158px 0px 158px;
+  box-sizing: border-box;
+}
+#logo{
+  padding-top:20px;
+  width:27.2%;
+}
+.cuerpo{
+  text-align: center;
+  font-size: 30px;
+  border:10px solid orange;
+  text-shadow: 0px 0px 6px white;
+  padding: 20px;
+  min-height: 350px;
+}
