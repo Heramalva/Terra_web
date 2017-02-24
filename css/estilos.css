@@ -10,6 +10,7 @@ a{
   text-shadow: 3px 3px black;
 }
 #cabecera{
+  border:1px solid black;
   display: flex;
   flex-flow: row wrap;
   text-align: center;
@@ -17,8 +18,9 @@ a{
   padding: 1px;
 }
 .empresa{
+  border:1px solid black;
   width:100%;
-  padding:0px 158px 0px 158px;
+  padding:0% 100% 0% 100%;
   box-sizing: border-box;
 }
 #logo{
