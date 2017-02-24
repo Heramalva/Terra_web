@@ -37,11 +37,23 @@ a{
   min-height: 316px;
 }
 footer{
-  font-size: 15px !important;
+  font-size: 15px;
   background-color: gray;
   display: flex;
+  -webkit-display:flex
   flex-flow: row wrap;
+  -webkit-flex-flow:row wrap;
 }
 .direccion, .redes, .mapa{
   width:33%;
+}
+
+@media (max-width:600px){
+  footer{
+    flex-flow: column wrap;
+  }
+  .direccion, .redes, .mapa{
+    width:100%;
+  }
+
 }
