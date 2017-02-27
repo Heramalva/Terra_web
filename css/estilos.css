@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
 }
-html{
-  font-family: sansita;
+body{
+  font-family: Sansita;
 }
 [class*="col-"] {
     float: left;
@@ -21,3 +21,22 @@ html{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+header{
+  background-color: gold;
+  text-align: center;
+}
+.titulo{
+  padding-top: 0px;
+}
+h1 {
+  font-size: 5vw;
+}
+#logo{
+  width:10.5vw;
+}
+.indice{
+  color:white;
+  text-shadow: 3px 3px 1px black;
+  text-decoration: none;
+}
