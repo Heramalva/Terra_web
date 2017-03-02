@@ -9,8 +9,8 @@ body{
 }
 [class*="col-"] {
     float: left;
+    border:1px dashed red;
     padding: 1px;
-
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -75,22 +75,14 @@ h1 {
   color:white;
   text-shadow: 2px 2px 5px black;
   text-align: center;
+  border-left-style: dashed;
+  border-color: black;
 }
 .enlace-boton{
   color:black;
 }
-.contenido{
-  height:400px;
-  width: 99%;
-}
-.dos{
-  height:400px;
-  width: 0px;
-}
-.tres{
-  height:400px;
-  width: 0px;
-}
+
+
 /*Estilos de Navegacion*/
 .navega{
   background-color: gold;
@@ -106,10 +98,23 @@ h1 {
   text-shadow: 2px 2px 1px black;
 }
 
-/*Animaciones */
-
-
-
+/*Estilos de Cuadro Principal Main*/
+.main{
+  min-height: 420px;
+  width: 100%;
+}
+.props{
+  margin: 0 auto;
+  color: white;
+}
+.detalles{
+  margin: 0 auto;
+  color: white;
+  font-size: 15px;
+}
+.enviar{
+  color:black;
+}
 /*Estilos de Pie de Pagina */
 footer{
   border-top-style: dashed;
