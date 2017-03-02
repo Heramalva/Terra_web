@@ -11,8 +11,10 @@
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 </head>
 <body>
+
+<!--Logo y Titulo-->
 <header class="row">
-  <a class="indice" href="index.html">
+  <a class="enlace" href="index.html">
     <div class="col-3">
       <img id="logo" src="imagenes/logo.png">
     </div>
@@ -24,27 +26,44 @@
     </div>
   </a>
 </header>
-  <div class="row text-center cuerpo">
+
+<!-- Texto y Botones-->
+<section class="row cuerpo">
   <div class="col-9">
     <div class="col-12 text-center info">
-      Compra, Venta y Promoción de Bienes Inmuebles
+      <h2>Compra, Venta y Promoción de Bienes Inmuebles</h2>
+      <p>
+        ¿Buscas invertir en una Propiedad?<br>
+        ¿Necesitas Vender y no sabes como comenzar?<br>
+        <br>
+        Ponte en contacto con nosotros y te asesoraremos para que lo logres
+      <p>
+        <br>
     </div>
-    <div class="col-3 "></div>
-    <div class="col-1 boton">
-      <img src="imagenes/casa.png" width="55%"><strong>Venta</strong>
-    </div>
+    <div class="col-3"></div>
+    <a href="venta.html" class=enlace-boton>
+      <div class="col-1 boton">
+        <img src="imagenes/casa.png" width="54%"><br><strong>Venta</strong>
+      </div>
+    </a>
     <div class="col-1"></div>
-    <div class="col-1 boton">
-      <img src="imagenes/casa.png" width="53%"><strong>Alquiler</strong>
-    </div>
+    <a href="alquiler.html" class=enlace-boton>
+      <div class="col-1 boton">
+        <img src="imagenes/casa.png" width="54%"><br><strong>Alquiler</strong>
+      </div>
+    </a>
     <div class="col-1"></div>
-    <div class="col-1 boton">
-      <img src="imagenes/casa.png" width="50%"><strong>Proyectos</strong>
-    </div>
+    <a href="proyectos.html"class=enlace-boton>
+      <div class="col-1 boton">
+        <img src="imagenes/casa.png" width="54%"><br><strong>Proyectos</strong>
+      </div>
+    </a>
     <div class="col-1"></div>
-    <div class="col-1 boton nosotros">
-      <img src="imagenes/casa.png" width="50%"><br><strong>Contáctanos</strong>
-    </div>
+    <a href="nosotros.html" class=enlace-boton>
+      <div class="col-1 boton nosotros">
+        <img src="imagenes/casa.png" width="54%"><br><strong>Contáctanos</strong>
+      </div>
+    </a>
     <div class="col-2"></div>
   </div>
   <div class="col-3 mv">
@@ -53,11 +72,27 @@
     <h2>Visión</h2>
     Nuestra visión está basada en abarcar toda nuestra ciudad, el mercado extranjero y ser reconocidos a nivel nacional e internacional para así ser mejores cada día y mostrándonos para que nuestros clientes tengan confianza y seguridad ante nosotros.
   </div>
-</div>
-    <div class="row">
-    <div class="col-4"></div>
-    <div class="col-4"></div>
-    <div class="col-4"></div>
+</section>
+
+<!-- Pie de Pagina-->
+<footer class="row">
+  <div class="col-4 direccion">
+    <p><strong>Dirección</strong></p>
+    <p>2 Calle "A" 3-27 zona 2, Cobán, Alta Verapaz, Guatemala</p>
+    <p><strong>Contacto</strong></p>
+    <p>e-mail: infoterrainmobiliaria@gmail.com<br>
+      Teléfono 1: +(502) 5550-7710<br>
+      Teléfono 2: +(502) 7951-2424<br>
   </div>
+  <div class="col-4 redes">
+    <p><strong>Siguenos en Nuestras Redes</strong></p>
+    <p><a id="social"href="https://www.facebook.com/TerraInmobiliariaGuate"><img src="imagenes/fblogo.png" width=30px>Facebook</a></p>
+    <p><a id="social"href="https://www.facebook.com/TerraInmobiliariaGuate"><img src="imagenes/ilogo.png" width=25 px>Instagram</a></p>
+  </div>
+  <div class="col-4">
+    <p><strong>Ubiquenos</strong><br>
+      <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJa7wjtcxGioURzUynRLJ1xgs" allowfullscreen="" width=90%></iframe></p>
+  </div>
+</footer>
 </body>
 </html>
