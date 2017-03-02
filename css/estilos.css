@@ -40,3 +40,27 @@ h1 {
   text-shadow: 3px 3px 1px black;
   text-decoration: none;
 }
+.nosotros{
+  font-size: 13px !important;
+}
+.boton{
+  border-radius: 100%;
+  border:3px solid black;
+  background-color: gold;
+  font-size: 15px;
+  height: 80px;
+  margin: 0 auto;
+  padding: auto;
+}
+.info{
+  font-size: 30px;
+}
+.cuerpo{
+  margin:0 auto;
+  background-image: url(../imagenes/fondo.jpg);
+  min-height: 400px;
+}
+.mv{
+  color:white;
+  text-shadow: 2px 2px 5px black;
+}
