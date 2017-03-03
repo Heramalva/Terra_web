@@ -33,6 +33,7 @@ header{
 }
 .titulo{
   padding-top: 0px;
+  font-size: 5vw ;
 }
 h1 {
   font-size: 5vw;
@@ -89,6 +90,7 @@ h1 {
 .props{
   margin: 0 auto;
   color: white;
+  margin-top: 10px;
 }
 .detalles{
   margin: 0 auto;
@@ -97,6 +99,9 @@ h1 {
 }
 .enviar{
   color:black;
+}
+.correo{
+  margin:0 auto;
 }
 /*Estilos de Pie de Pagina */
 footer{
