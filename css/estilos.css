@@ -1,46 +1,70 @@
-body{
-  background-image: url(../img/castillo.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+.pagina{
+  background-image: url(../imagenes/fondo.jpg);
+  background-repeat: repeat-y;
   background-attachment: fixed;
 }
-.contenedor{
-  background-color: rgba(0,0,255,0.2);
+.pie{
+  padding:5px;
 }
-.ali{
-  text-align: right;
-}
-.logo{
-  width: 100%;
-  border-radius: 25px;
-  margin-top: 20px;
-}
-.slogan{
-  margin-top: 100px;
-  font-style: italic;
-  text-shadow: 1px 1px black;
-}
-.slogan2{
-  font-style: italic;
-  text-shadow: 1px 1px black;
-  text-align: center;
-}
-.nav{
-  margin-top: 20px;
-}
-.articulo{
+.justificado{
   text-align: justify;
 }
-.comentario{
-  margin-top:5px;
-  margin-bottom:5px;
+.botones{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.enviar{
-  margin-bottom: 15px;
+.contenido{
+  background-color: rgba(255,0,0,0.3);
+  text-shadow: 2px 2px 2px black;
+  border-radius: 20px;
 }
-.autor{
-  margin-top: 20px;
+.yellow{
+  border-radius: 0px 0px 20px 20px;
 }
-.centro{
-  text-align: center;
+.grey{
+  border-radius: 20px 20px 0px 0px;
+}
+.texto{
+  font-size:
+}
+.titulo{
+  font-size: 70px;
+  margin-top: 15px;
+}
+
+@media (max-width:560px){
+  .titulo{
+    font-size: 30px;
+    margin-top: -5px;
+  }
+  .logo{
+    margin-top: 10px;
+  }
+}
+@media (min-width:561px) and (max-width:600px){
+  .titulo{
+    font-size: 47px;
+    margin-top: -6px;
+  }
+  .logo{
+    margin-top: 13px;
+  }
+}
+@media (min-width:601px) and (max-width:767px){
+  .titulo{
+    font-size: 45px;
+    margin-top: -6px;
+  }
+  .logo{
+    margin-top: 13px;
+  }
+}
+@media (min-width:768px) and (max-width:992px){
+  .titulo{
+    font-size: 50px;
+    margin-top: -6px;
+  }
+  .logo{
+    margin-top: 13px;
+  }
 }
