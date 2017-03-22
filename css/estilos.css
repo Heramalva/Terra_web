@@ -1,115 +1,46 @@
-* {
-    box-sizing: border-box;
-}
 body{
-  background-color: black;
-  font-family: Sansita;
+  background-image: url(../img/castillo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.contenedor{
+  background-color: rgba(0,0,255,0.2);
+}
+.ali{
+  text-align: right;
+}
+.logo{
   width: 100%;
-  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 20px;
 }
-[class*="col-"] {
-    float: left;
-    padding: 1px;
+.slogan{
+  margin-top: 100px;
+  font-style: italic;
+  text-shadow: 1px 1px black;
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/* Estilos de Cabecera */
-header{
-  background-color: gold;
+.slogan2{
+  font-style: italic;
+  text-shadow: 1px 1px black;
   text-align: center;
-  margin:0 auto;
-  border-bottom-style: dashed;
-}
-.titulo{
-  padding-top: 0px;
-  font-size: 5vw ;
-}
-h1 {
-  font-size: 5vw;
-}
-#logo{
-  width:10.5vw;
-}
-.enlace{
-  color:white;
-  text-shadow: 3px 3px 1px black;
-  text-decoration: none;
-}
-
-/* Estilos de Cuerpo y botones */
-.info{
-  font-size: 25px;
-  color:gold;
-  text-shadow: 2px 2px 1px black;
-}
-.cuerpo{
-  text-align: center;
-  background-image: url(../imagenes/back.jpg);
-  min-height: 400px;
-  margin:0 auto;
-}
-.mv{
-  color:white;
-  text-shadow: 2px 2px 5px black;
-  text-align: center;
-  border-left-style: dashed;
-  border-color: black;
-}
-
-/*Estilos de Navegacion*/
-.navega{
-  background-color: gold;
-  border-bottom-style: dashed;
-  font-size: 2.5vw;
 }
 .nav{
-  border-left-style: ridge;
-  border-right-style: ridge;
+  margin-top: 20px;
 }
-.enlace-nav{
-  color:white;
-  text-shadow: 2px 2px 1px black;
+.articulo{
+  text-align: justify;
 }
-
-/*Estilos de Cuadro Principal Main*/
-.main{
-  min-height: 420px;
-  width: 100%;
-}
-.props{
-  margin: 0 auto;
-  color: white;
-  margin-top: 10px;
-}
-.detalles{
-  margin: 0 auto;
-  color: white;
-  font-size: 15px;
+.comentario{
+  margin-top:5px;
+  margin-bottom:5px;
 }
 .enviar{
-  color:black;
+  margin-bottom: 15px;
 }
-.correo{
-  margin:0 auto;
+.autor{
+  margin-top: 20px;
 }
-/*Estilos de Pie de Pagina */
-footer{
-  border-top-style: dashed;
-  border-color: black;
-  margin:0 auto;
+.centro{
   text-align: center;
-  background-color: dimgray;
-  color:white;
-  text-shadow: 1px 1px 2px black;
 }
