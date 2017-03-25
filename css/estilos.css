@@ -41,6 +41,13 @@ body{
   font-size: 70px;
   margin-top: 15px;
 }
+.proyecto{
+  margin-top: 15px;
+}
+.proyectotexto{
+  margin-top: 15px;
+  text-shadow: 2px 2px 2px black;
+}
 
 @media (max-width:560px){
   .titulo{
