@@ -50,6 +50,9 @@ body{
 }
 
 @media (max-width:560px){
+  .pagina2{
+    background-image: url(../imagenes/fondos.jpg);
+  }
   .titulo{
     font-size: 30px;
     margin-top: -5px;
