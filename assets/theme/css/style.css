@@ -13,12 +13,10 @@
    font-weight: bold;
  }
  body{
-   background-image: url(../../../imagenes/fondo2.jpg);
-   background-attachment: fixed;
    padding-top: 80px;
  }
  .pagina{
-   background-color: rgba(255, 255, 0, 0.3);
+   background-color: rgba(255, 0, 0, 0.7);
  }
 .texto{
   font-size: 20px;
