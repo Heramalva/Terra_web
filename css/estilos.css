@@ -44,10 +44,13 @@ body{
 .proyectotexto{
   margin-top: 15px;
 }
+.pagina2{
+  /*background-image: url(../imagenes/fondo.jpg);*/
+}
 
 @media (max-width:560px){
   .pagina2{
-    background-image: url(../imagenes/fondos.jpg);
+    /*background-image: url(../imagenes/fondos.jpg);*/
   }
   .titulo{
     font-size: 30px;
