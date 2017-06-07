@@ -12,7 +12,7 @@ body{
   margin-bottom: 10px;
 }
 .contenido{
-  background-color: rgba(255,0,0,0.9);
+  background-color: rgba(255,0,0,0.7);
   text-shadow: 2px 2px 2px black;
   border-radius: 20px;
 }
@@ -22,6 +22,7 @@ body{
 .yellow2{
   background-color: yellow;
   border-radius: 10px 10px 10px 10px;
+  border:3px black solid;
 }
 .grey{
   border-radius: 20px 20px 0px 0px;
@@ -44,9 +45,15 @@ body{
 .proyectotexto{
   margin-top: 15px;
 }
-.pagina2{
-  /*background-image: url(../imagenes/fondo.jpg);*/
+.pagina{
+  background-image: url(../imagenes/back.jpg);
 }
+.filtro{
+  background-color: rgba(255,150,0,0.3);
+}
+/*.pagina2{
+  background-image: url(../imagenes/fondo.jpg);
+}*/
 
 @media (max-width:560px){
   .pagina2{
