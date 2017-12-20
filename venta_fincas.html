@@ -9,6 +9,9 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/estilos.css">
+<!--Jquery-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/filtros.js"></script>
   </head>
 
   <body>
@@ -35,11 +38,11 @@
             <ul>
               <li><a class="dropdown-button black-text yellow" data-activates="dropdown1"><b>Lugar</b><i class="material-icons right">arrow_drop_down</i></a></li>
               <ul id='dropdown1' class='dropdown-content yellow'>
-                <li><a class="black-text" href="venta_fincas.html">Todos</a></li>
-                <li><a class="black-text" href="filtro-venta_finca-panzos.html">Escuintla</a></li>
-                <li><a class="black-text" href="filtro-venta_finca-lanquin.html">Lanquin</a></li>
-                <li><a class="black-text" href="filtro-venta_finca-escuintla.html">Panzos</a></li>
-                <li><a class="black-text" href="filtro-venta_finca-peten.html">Petén</a></li>
+                <li id="todos"><a class="black-text">Todos</a></li>
+                <li id="escuintla"><a class="black-text">Escuintla</a></li>
+                <li id="lanquin"><a class="black-text">Lanquin</a></li>
+                <li id="panzos"><a class="black-text">Panzos</a></li>
+                <li id="peten"><a class="black-text">Petén</a></li>
               </ul>
             </ul>
           </div>
@@ -49,7 +52,7 @@
         <div class="row">
 
 <!-- NOTE: lanquin-->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 lanquin">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/lanquin.jpg" alt="Lanquin">
@@ -90,7 +93,7 @@
         </div>
 
 <!-- NOTE: peten -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 peten">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/peten.jpg" alt="Petén">
@@ -113,7 +116,7 @@
         </div>
 
 <!-- NOTE: panzos -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 panzos">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/mayagua.jpg" alt="Panzos">
@@ -152,7 +155,7 @@
           </div>
         </div>
 <!-- NOTE: escuintla -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 escuintla">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/escuintla.jpg" alt="Escuintla">

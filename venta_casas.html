@@ -9,6 +9,9 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/estilos.css">
+<!--Jquery-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/filtros.js"></script>
   </head>
 
   <body>
@@ -35,15 +38,15 @@
           <ul>
             <li><a class="dropdown-button black-text yellow" data-activates="dropdown1"><b>Lugar</b><i class="material-icons right">arrow_drop_down</i></a></li>
             <ul id='dropdown1' class='dropdown-content yellow'>
-              <li><a class="black-text" href="venta_casas.html">Todos</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-capital.html">C.Capital</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-carcha.html">Carchá</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-chamelco.html">Chamelco</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-coban.html">Cobán</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-tactic.html">Tactic</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-stacruz.html">Santa Cruz</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-purulha.html">Purulhá</a></li>
-              <li><a class="black-text" href="filtro-venta_casa-salama.html">Salamá</a></li>
+              <li id="todos">	 <a class="black-text">Todos</a></li>
+              <li id="capital">	 <a class="black-text">C.Capital</a></li>
+              <li id="carcha">	 <a class="black-text">Carchá</a></li>
+              <li id="chamelco"> <a class="black-text">Chamelco</a></li>
+              <li id="coban">	 <a class="black-text">Cobán</a></li>
+              <li id="purulha">	 <a class="black-text">Purulhá</a></li>
+              <li id="salama">	 <a class="black-text">Salamá</a></li>
+              <li id="santacruz"><a class="black-text">Santa Cruz</a></li>
+              <li id="tactic">	 <a class="black-text">Tactic</a></li>
             </ul>
           </ul>
         </div>
@@ -54,8 +57,48 @@
         <div class="row">
 
 
+<!-- NOTE: casa ruta santa cruz chichaic -->
+          <div class="col s12 m6 l3 coban">
+             <div class="card yellow darken-1 medium z-depth-3">
+              <div class="card-image waves-effect waves-block waves-light">
+                 <img class="activator" src="detalles/rutastacruz.jpg" alt="Cobán">
+              </div>
+               <div class="card-reveal red darken-3 white-text">
+                <span class="card-title flow-text"><i class="material-icons right">close</i></span>
+                  <p>
+                    - Con una extension de terreno de 1,316 metros cuadrados<br>
+                    - La Casa ocupa 220 metros cuadrados<br>
+                    - Todo la propiedad cercada con alambre de puas y postes de madera<br>
+                    - Porton de Reja Metalico<br>
+                    - Parqueo para 2 vehiculos<br>
+                    - Acceso con carrileras de cemento<br>
+                    - Arboles de pino<br>
+                    <br>
+                    La Casa cuenta con:<br>
+                    - Sala<br>
+                    - Comedor<br>
+                    - Cocina<br>
+                    - Lavanderia<br>
+                    - Estudio<br>
+                    - 3 Habitaciones<br>
+                    - 2 Baños<br>
+                    - Desayunador<br>
+                    - Chimenea<br>
+                    - Calentador de Agua
+                  </p>
+                <div class="card-title">
+                  <a class="right white-text" href="escribenos_venta.html">Contáctenos</a>
+                </div>
+              </div>
+              <div class="card-content black-text">
+                <span class="card-title center">Casa Ruta a Santa Cruz</span>
+                <blockquote class="flow-text">Q 1,000,000.00</blockquote>
+              </div>
+            </div>
+          </div>
+
 <!-- NOTE: casa purulha -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 purulha">
              <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                  <img class="activator" src="detalles/purulha.jpg" alt="Purulhá">
@@ -97,7 +140,7 @@
           </div>
 
 <!-- NOTE: casa peña del gallo -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 santacruz">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/pena.jpg" alt="Santa Cruz">
@@ -131,7 +174,7 @@
                   </div>
 
 <!-- NOTE: casa santa elena -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 santacruz">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/staelena.jpg" alt="Santa Elena">
@@ -157,7 +200,7 @@
                   </div>
 
 <!-- NOTE: casa recreo -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 coban">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/recreo.jpg" alt="recreo">
@@ -189,7 +232,7 @@
                   </div>
 
 <!-- NOTE: casa sasay -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 coban">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/sasay.jpg" alt="sasay">
@@ -222,7 +265,7 @@
                   </div>
 
 <!-- NOTE: casa los angeles stacruz -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 santacruz">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/stacruz.jpg" alt="santa cruz">
@@ -254,7 +297,7 @@
 
 
 <!-- NOTE: casa chamelco chio -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 chamelco">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/chamelco_cabaña.jpg" alt="chio">
@@ -283,7 +326,7 @@
                   </div>
 
 <!-- NOTE: casa 10 avenida zona 3 -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 coban">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/zona3.jpg" alt="Zona 3">
@@ -317,8 +360,8 @@
                     </div>
                   </div>
 
-<!-- NOTE: casa floresta -->
-                  <div class="col s12 m6 l3">
+<!-- NOTE: casa floresta ---YA NO
+                  <div class="col s12 m6 l3 santacruz">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/floresta.jpg" alt="La Floresta">
@@ -345,10 +388,10 @@
                         <blockquote class="flow-text">Q450,000.00</blockquote>
                       </div>
                     </div>
-                  </div>
+                  </div>---->
 
 <!-- NOTE: casa rubel ruta a lanquin -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 carcha">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/rubelcarcha.jpg" alt="Rubel Raxtul">
@@ -377,7 +420,7 @@
                   </div>
 
 <!-- NOTE: casa carretera a el salvador -->
-                  <div class="col s12 m6 l3">
+                  <div class="col s12 m6 l3 capital">
                     <div class="card yellow darken-1 medium z-depth-3">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="detalles/capital.jpg" alt="capital">
@@ -414,7 +457,7 @@
                   </div>
                   
 <!-- NOTE: zona 1 coban-->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/zona1.jpg" alt="Zona 1">
@@ -442,7 +485,7 @@
         </div>
         
 <!-- NOTE: casa el bosque stacruz-->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 santacruz">
               <div class="card yellow darken-1 medium z-depth-3">
                 <div class="card-image waves-effect waves-block waves-light">
                    <img class="activator" src="detalles/panquiyou.jpg" alt="Santa Cruz">
@@ -475,7 +518,7 @@
             </div>
 
 <!-- NOTE: casa 3 niveles derick-->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/aptoz8.jpg" alt="3 Niveles">
@@ -504,7 +547,7 @@
         </div>
 
 <!-- NOTE: casa salama -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 salama">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/salama.jpg" alt="Salama">
@@ -531,8 +574,8 @@
           </div>
         </div>
 
-<!-- NOTE: casa el arco con locales -->
-        <div class="col s12 m6 l3">
+<!-- NOTE: casa efa con locales -->
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/warco.jpg" alt="Entrada a la EFA">
@@ -564,7 +607,7 @@
         </div>
 
 <!-- NOTE: casa res. madeira carcha -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 carcha">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/casamadeira.jpg" alt="Residenciales Madeira">
@@ -593,7 +636,7 @@
         </div>
 
 <!-- NOTE: casa talpetate por polideportivo -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
                       <div class="card yellow darken-1 medium z-depth-3">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="detalles/casa2niveles.jpg" alt="Periferico Sur">
@@ -629,7 +672,7 @@
                     </div>
 
 <!-- NOTE: casa petet pista de aviacion -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/wpetet.jpg" alt="Petet">
@@ -661,7 +704,7 @@
           </div>
 
 <!-- NOTE: casa con locales tactic -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 tactic">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/tactic1.jpg" alt="Tactic">
@@ -690,7 +733,7 @@
           </div>
 
 <!-- NOTE: casa periferico sur 550,000 -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/psur1.jpg" alt="Tactic">
@@ -712,7 +755,7 @@
           </div>
 
 <!-- NOTE: propiedad fte bomberos coban -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/centro1.jpg" alt="Tactic">
@@ -734,7 +777,7 @@
           </div>
 
 <!-- NOTE: caniab carcha -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 carcha">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/webcaniab.jpg" alt="Tactic">
@@ -766,7 +809,7 @@
         </div>
 
 <!-- NOTE: cacic lili macz -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/cacic.jpg" alt="Cacic">
@@ -809,7 +852,7 @@
         </div>
 
 <!-- NOTE: casa monja blanca 2 -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/monjablanca2.jpg" alt="Monja Blanca 2">
@@ -841,7 +884,7 @@
         </div>
 
 <!-- NOTE: chicuxab fiora -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/chicuxab.jpg" alt="Chicuxab">
@@ -896,7 +939,6 @@
 
       </div>
     </div>
-
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

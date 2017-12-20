@@ -9,6 +9,9 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/estilos.css">
+<!--Jquery-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/filtros.js"></script>
   </head>
 
   <body>
@@ -35,8 +38,8 @@
             <ul>
               <li><a class="dropdown-button black-text yellow" data-activates="dropdown1"><b>Lugar</b><i class="material-icons right">arrow_drop_down</i></a></li>
               <ul id='dropdown1' class='dropdown-content yellow'>
-                <li><a class="black-text" href="alquiler_bodegas.html">Todos</a></li>
-                <li><a class="black-text" href="filtro-alquiler_bodega-coban.html">Cobán</a></li>
+                <li id="todos"><a class="black-text">Todos</a></li>
+                <li id="coban"><a class="black-text">Cobán</a></li>
               </ul>
             </ul>
           </div>
@@ -45,7 +48,7 @@
 <!-- NOTE: propiedades -->
         <div class="row">
 <!-- NOTE: bodega periferico sur -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/bodegapsur.jpg" alt="Periferico Sur">
@@ -70,7 +73,7 @@
           </div>
         </div>
 <!-- NOTE: 2 bodegas periferico norte -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/elarco.jpg" alt="Bodegas El Arco">
@@ -93,7 +96,7 @@
           </div>
         </div>
 <!-- NOTE: bodega con CCTV bella vista -->
-        <div class="col s12 m6 l3">
+        <div class="col s12 m6 l3 coban">
           <div class="card yellow darken-1 medium z-depth-3">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="detalles/bellavista.jpg" alt="Bella Vista">

@@ -9,6 +9,9 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/estilos.css">
+<!--Jquery-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/filtros.js"></script>
   </head>
 
   <body>
@@ -35,11 +38,11 @@
             <ul>
               <li><a class="dropdown-button black-text yellow" data-activates="dropdown1"><b>Lugar</b><i class="material-icons right">arrow_drop_down</i></a></li>
               <ul id='dropdown1' class='dropdown-content yellow'>
-                <li><a class="black-text" href="venta_terrenos.html">Todos</a></li>
-                <li><a class="black-text" href="filtro-venta_terreno-carcha.html">Carchá</a></li>
-                <li><a class="black-text" href="filtro-venta_terreno-chamelco.html">Chamelco</a></li>
-                <li><a class="black-text" href="filtro-venta_terreno-coban.html">Cobán</a></li>
-                <li><a class="black-text" href="filtro-venta_terreno-sancristobal.html">San Cristóbal</a></li>
+                <li id="todos"><a class="black-text">Todos</a></li>
+                <li id="carcha"><a class="black-text">Carchá</a></li>
+                <li id="chamelco"><a class="black-text">Chamelco</a></li>
+                <li id="coban"><a class="black-text">Cobán</a></li>
+                <li id="sancristobal"><a class="black-text">San Cristóbal</a></li>
               </ul>
             </ul>
           </div>
@@ -50,7 +53,34 @@
 
 
 <!-- NOTE: 5 cuerdas chamelco -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 santacruz">
+            <div class="card yellow darken-1 medium z-depth-3">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="detalles/rutatactic.jpg" alt="Santa Cruz">
+              </div>
+              <div class="card-reveal red darken-3 white-text">
+                <span class="card-title flow-text"><i class="material-icons right">close</i></span>
+                  <p>
+                    - Terreno Ubicado salida a Tactic<br>
+                    - En Area Comercial en Crecimiento<br>
+                    - Terreno Plano<br>
+                    - A Orilla de la Carretera Principal<br>
+                    - Con Acceso cercano a Energía y Agua Potable
+                  </p>
+                <div class="card-title">
+                  <a class="right white-text" href="escribenos_venta.html">Contáctenos</a>
+                </div>
+              </div>
+              <div class="card-content black-text">
+                <span class="card-title center">4,936 Metros Cuadrados Santa Cruz</span>
+                <blockquote class="flow-text">Q1,200,000.00</blockquote>
+              </div>
+            </div>
+          </div>
+
+
+<!-- NOTE: 5 cuerdas chamelco -->
+          <div class="col s12 m6 l3 chamelco">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/5cuerdas.jpg" alt="Chamelco">
@@ -61,7 +91,7 @@
                     - Terreno Ubicado camino a las Grutas del Rey Marcos<br>
                     - Parte del terreno es inclinado<br>
                     - A Orilla de la Carretera Principal<br>
-                    - Con Acceso cercano a Enería y Agua Potable<br>
+                    - Con Acceso cercano a Energía y Agua Potable<br>
                     - A pocos minutos del centro de Chamelco
                   </p>
                 <div class="card-title">
@@ -76,7 +106,7 @@
           </div>
 
 <!-- NOTE: periferico 35000m2 -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/cobcar.jpg" alt="Ruta Carcha">
@@ -102,7 +132,7 @@
           </div>
 
 <!-- NOTE: periferico 35000m2 -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/psur.jpg" alt="Periferico Sur">
@@ -128,7 +158,7 @@
           </div>
 
 <!-- NOTE: chamelco-stacruz-->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 chamelco">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/rtastacruz.jpg" alt="Chamelco">
@@ -156,7 +186,7 @@
           </div>
 
 <!-- NOTE: san cristobal-->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 sancristobal">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/sancris.jpg" alt="San Cristóbal">
@@ -185,7 +215,7 @@
           </div>
 
 <!-- NOTE: yalguo2 -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/yalguo2.jpg" alt="Yalguo">
@@ -210,7 +240,7 @@
           </div>
 
 <!-- NOTE: yalguo -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/yalguo.jpg" alt="Yalguo">
@@ -235,7 +265,7 @@
           </div>
 
 <!-- NOTE: las mercedes2 -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/mercedes2.jpg" alt="Las Mercedes">
@@ -259,7 +289,7 @@
           </div>
 
 <!-- NOTE: las mercedes1 -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/mercedes.jpg" alt="Las Mercedes">
@@ -284,7 +314,7 @@
           </div>
 
 <!-- NOTE: el rosario Sighuana -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/rosario.jpg" alt="Sighuana">
@@ -310,7 +340,7 @@
           </div>
 
 <!-- NOTE: santa catalina -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 chamelco">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/stacatalina.jpg" alt="Chamelco">
@@ -336,7 +366,7 @@
           </div>
 
 <!-- NOTE: chabil ha chamelco -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 chamelco">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/chabilha.jpg" alt="Chamelco">
@@ -362,7 +392,7 @@
           </div>
 
 <!-- NOTE: raxpec carcha -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 carcha">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/lotesraxpec.jpg" alt="Raxpec">
@@ -388,7 +418,7 @@
           </div>
 
 <!-- NOTE: nuevo horizonte sesibche -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 chamelco">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/sesibche.jpg" alt="Sesibche">
@@ -413,7 +443,7 @@
           </div>
 
 <!-- NOTE: 8 manzanas chirretzaaj -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/lascruces.jpg" alt="Centro">
@@ -437,7 +467,7 @@
             </div>
           </div>
 <!-- NOTE: lotes la libertad -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/libertad.jpg" alt="Centro">
@@ -462,7 +492,7 @@
             </div>
           </div>
 <!-- NOTE: lote tanques de agua quique -->
-          <div class="col s12 m6 l3">
+          <div class="col s12 m6 l3 coban">
             <div class="card yellow darken-1 medium z-depth-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="detalles/lotepsur.jpg" alt="Periferico Sur">
@@ -488,7 +518,7 @@
             </div>
           </div>
 <!-- NOTE: lote saxoc salida a chisec -->
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 l3 coban">
         <div class="card yellow darken-1 medium z-depth-3">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="detalles/saxoc.jpg" alt="Saxoc">
@@ -516,7 +546,7 @@
         </div>
       </div>
 <!-- NOTE: lotes chio chamelco -->
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 l3 chamelco">
         <div class="card yellow darken-1 medium z-depth-3">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="detalles/chio.jpg" alt="Centro">
